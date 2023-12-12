@@ -1,0 +1,32 @@
+
+get http://localhost:3000/users HTTP/1.1
+
+###
+get http://localhost:3000/users/1 HTTP/1.1
+###
+post http://localhost:3000/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "omares",
+    "password": "orangel",
+    "first_name": "Oariana",
+    "last_name": "Chavez",
+    "email": "echoviris@esquimal.mx",
+    "role": 5
+}
+
+###
+put http://localhost:3000/users/100 HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "saea",
+    "first_name": "Orlando Pascual",
+    "last_name": "MArt",
+    "email": "iris@",
+    "role": 2
+}
+
+###
+DELETE http://localhost:3000/users/22 HTTP/1.1
